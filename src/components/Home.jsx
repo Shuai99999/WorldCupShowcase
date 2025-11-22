@@ -2,6 +2,7 @@ import './Home.css'
 import ProductGrid from './ProductGrid'
 import Navigation from './Navigation'
 import productsData from '../data/products.json'
+import { getImagePath } from '../utils/imagePath'
 
 function Home() {
   return (
@@ -20,9 +21,24 @@ function Home() {
             Premium fan merchandise and match-day accessories for local retailers
           </p>
           <div className="hero-countries">
-            <span className="country-flag">🇺🇸</span>
-            <span className="country-flag">🇨🇦</span>
-            <span className="country-flag">🇲🇽</span>
+            <img 
+              src={getImagePath('/flags/us.svg')}
+              alt="USA" 
+              className="country-flag flag-icon"
+              loading="eager"
+            />
+            <img 
+              src={getImagePath('/flags/ca.svg')}
+              alt="Canada" 
+              className="country-flag flag-icon"
+              loading="eager"
+            />
+            <img 
+              src={getImagePath('/flags/mx.svg')}
+              alt="Mexico" 
+              className="country-flag flag-icon"
+              loading="eager"
+            />
           </div>
         </div>
         <div className="hero-decoration">

@@ -1,14 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="48" height="32">
+  <!-- Red stripes background -->
   <rect width="30" height="20" fill="#B22234"/>
-  <path d="M 0 1.54 L 30 1.54 M 0 3.08 L 30 3.08 M 0 4.62 L 30 4.62 M 0 6.16 L 30 6.16 M 0 7.7 L 30 7.7 M 0 9.24 L 30 9.24 M 0 10.78 L 30 10.78 M 0 12.32 L 30 12.32 M 0 13.86 L 30 13.86 M 0 15.4 L 30 15.4" stroke="#FFFFFF" stroke-width="0.92"/>
+  <!-- White stripes -->
+  <rect y="1.54" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="3.08" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="4.62" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="6.16" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="7.7" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="9.24" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="10.78" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="12.32" width="30" height="0.92" fill="#FFFFFF"/>
+  <rect y="13.86" width="30" height="0.92" fill="#FFFFFF"/>
+  <!-- Blue canton -->
   <rect width="12" height="10.78" fill="#3C3B6E"/>
-  <g fill="#FFFFFF" font-size="1.5" font-family="Arial" font-weight="bold">
-    <text x="1" y="2.5">★</text>
-    <text x="3.5" y="2.5">★</text>
-    <text x="1" y="4.5">★</text>
-    <text x="3.5" y="4.5">★</text>
-    <text x="1" y="6.5">★</text>
-    <text x="3.5" y="6.5">★</text>
-  </g>
+  <!-- Stars (simplified) -->
+  <circle cx="2" cy="2" r="0.6" fill="#FFFFFF"/>
+  <circle cx="4" cy="2" r="0.6" fill="#FFFFFF"/>
+  <circle cx="6" cy="2" r="0.6" fill="#FFFFFF"/>
+  <circle cx="2" cy="4" r="0.6" fill="#FFFFFF"/>
+  <circle cx="4" cy="4" r="0.6" fill="#FFFFFF"/>
+  <circle cx="6" cy="4" r="0.6" fill="#FFFFFF"/>
+  <circle cx="2" cy="6" r="0.6" fill="#FFFFFF"/>
+  <circle cx="4" cy="6" r="0.6" fill="#FFFFFF"/>
+  <circle cx="6" cy="6" r="0.6" fill="#FFFFFF"/>
 </svg>
-
