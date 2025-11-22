@@ -29,9 +29,9 @@ function Home() {
             Premium fan merchandise and match-day accessories for local retailers
           </p>
           <div className="hero-countries">
-            <span className="country-flag">USA</span>
-            <span className="country-flag">CAN</span>
-            <span className="country-flag">MEX</span>
+            <span className="country-flag">🇺🇸</span>
+            <span className="country-flag">🇨🇦</span>
+            <span className="country-flag">🇲🇽</span>
           </div>
         </div>
         <div className="hero-decoration">

@@ -119,13 +119,7 @@
 }
 
 .country-flag {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 48px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -294,8 +288,7 @@
   }
 
   .country-flag {
-    font-size: 18px;
-    padding: 6px 12px;
+    font-size: 36px;
   }
 
   .section-title {
