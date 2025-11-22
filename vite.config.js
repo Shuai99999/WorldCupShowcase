@@ -9,7 +9,7 @@ import path from "path";
 
 export default defineConfig({
   // GitHub Pages base路径 - 根据你的实际仓库名修改
-  base: "https://Shuai99999.github.io/WorldCupShowcase/",
+  base: "/WorldCupShowcase/",
   plugins: [react()],
   resolve: {
     alias: {
