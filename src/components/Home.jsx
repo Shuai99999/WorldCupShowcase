@@ -2,11 +2,20 @@ import './Home.css'
 import ProductGrid from './ProductGrid'
 import Navigation from './Navigation'
 import productsData from '../data/products.json'
+import { getImagePath } from '../utils/imagePath'
 
 function Home() {
+  // Get the background image path with base URL
+  const backgroundImage = getImagePath('/hero-football-bg.jpg')
+  
   return (
     <div className="home">
-      <header className="hero-section">
+      <header 
+        className="hero-section"
+        style={{
+          '--hero-bg-image': `url('${backgroundImage}')`
+        }}
+      >
         <div className="hero-content">
           <div className="hero-badge">
             <span className="worldcup-year">2026</span>
