@@ -37,12 +37,38 @@ jobs:
           echo "VITE_BASE will be: /${{ github.event.repository.name }}/"
 
       - name: Build
-        run: npm run build
+        run: |
+          echo "=== Build Configuration ==="
+          echo "Repository name: ${{ github.event.repository.name }}"
+          echo "VITE_BASE will be: /${{ github.event.repository.name }}/"
+          echo "VITE_REPO_NAME will be: ${{ github.event.repository.name }}"
+          echo ""
+          echo "Verifying environment variables..."
+          echo "VITE_BASE=$VITE_BASE"
+          echo "VITE_REPO_NAME=$VITE_REPO_NAME"
+          echo ""
+          echo "Building..."
+          npm run build
+          echo ""
+          echo "=== Checking build output ==="
+          if [ -f dist/index.html ]; then
+            echo "✓ dist/index.html exists"
+            echo "First 15 lines of dist/index.html:"
+            head -15 dist/index.html
+            echo ""
+            echo "Checking if base path is correct..."
+            if grep -q "/${{ github.event.repository.name }}/" dist/index.html; then
+              echo "✓ Base path found in index.html"
+            else
+              echo "✗ WARNING: Base path NOT found in index.html!"
+            fi
+          else
+            echo "✗ ERROR: dist/index.html not found!"
+          fi
         env:
           # 自动使用仓库名作为base路径
           VITE_REPO_NAME: ${{ github.event.repository.name }}
           VITE_BASE: /${{ github.event.repository.name }}/
-        shell: bash
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
