@@ -1,0 +1,74 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Green field gradient -->
+    <linearGradient id="fieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5016;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3a6b1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5016;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Grass pattern -->
+    <pattern id="grassPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#3a6b1f"/>
+      <path d="M 0 20 Q 10 15, 20 20 T 40 20" stroke="#2d5016" stroke-width="1" fill="none" opacity="0.3"/>
+      <path d="M 0 30 Q 10 25, 20 30 T 40 30" stroke="#2d5016" stroke-width="1" fill="none" opacity="0.3"/>
+    </pattern>
+    
+    <!-- Goal net pattern -->
+    <pattern id="netPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="20" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+      <line x1="20" y1="0" x2="0" y2="20" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background field -->
+  <rect width="1920" height="600" fill="url(#fieldGrad)"/>
+  <rect width="1920" height="600" fill="url(#grassPattern)" opacity="0.4"/>
+  
+  <!-- Center line -->
+  <line x1="960" y1="0" x2="960" y2="600" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- Center circle -->
+  <circle cx="960" cy="300" r="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <circle cx="960" cy="300" r="5" fill="rgba(255,255,255,0.5)"/>
+  
+  <!-- Left goal -->
+  <rect x="50" y="150" width="20" height="300" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="50" y="150" width="150" height="300" fill="url(#netPattern)" opacity="0.5"/>
+  <rect x="50" y="150" width="150" height="20" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="50" y="430" width="150" height="20" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="180" y="150" width="20" height="300" fill="rgba(255,255,255,0.9)" rx="2"/>
+  
+  <!-- Right goal -->
+  <rect x="1850" y="150" width="20" height="300" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="1720" y="150" width="150" height="300" fill="url(#netPattern)" opacity="0.5"/>
+  <rect x="1720" y="150" width="150" height="20" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="1720" y="430" width="150" height="20" fill="rgba(255,255,255,0.9)" rx="2"/>
+  <rect x="1700" y="150" width="20" height="300" fill="rgba(255,255,255,0.9)" rx="2"/>
+  
+  <!-- Football in center - larger and more prominent -->
+  <g transform="translate(960, 280)">
+    <!-- Football shadow -->
+    <ellipse cx="0" cy="70" rx="60" ry="18" fill="rgba(0,0,0,0.4)"/>
+    <!-- Football -->
+    <circle cx="0" cy="0" r="60" fill="#FFFFFF" stroke="#333" stroke-width="2.5"/>
+    <!-- Football pattern - pentagon and hexagon design -->
+    <path d="M 0 -48 L 18 -42 L 14 -22 L -14 -22 L -18 -42 Z" fill="#333"/>
+    <path d="M 30 -24 L 42 -6 L 34 12 L 14 6 L 14 -12 Z" fill="#333"/>
+    <path d="M -30 -24 L -14 -12 L -14 6 L -34 12 L -42 -6 Z" fill="#333"/>
+    <path d="M 14 22 L 34 12 L 42 24 L 24 36 L 0 30 Z" fill="#333"/>
+    <path d="M -14 22 L 0 30 L -24 36 L -42 24 L -34 12 Z" fill="#333"/>
+    <!-- White lines on football -->
+    <path d="M 0 -48 L 0 30 M 18 -42 L 34 12 M -18 -42 L -34 12 M 30 -24 L 42 24 M -30 -24 L -42 24" 
+          stroke="#FFF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Penalty areas -->
+  <rect x="50" y="200" width="150" height="200" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <rect x="1720" y="200" width="150" height="200" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- Penalty arcs -->
+  <path d="M 200 300 Q 200 200, 150 200" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <path d="M 1720 300 Q 1720 200, 1770 200" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+</svg>
+

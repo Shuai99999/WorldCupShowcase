@@ -1,0 +1,24 @@
+[
+  {
+    "id": "product-001",
+    "name": "Product Name",
+    "description": "Detailed product description. You can write multiple lines to describe product features, materials, uses, etc.",
+    "images": [
+      "/products/example1.jpg",
+      "/products/example2.jpg"
+    ],
+    "category": "Jerseys",
+    "tags": ["Official", "Authentic"]
+  },
+  {
+    "id": "product-002",
+    "name": "Another Product Name",
+    "description": "Description for another product",
+    "images": [
+      "/products/example3.jpg"
+    ],
+    "category": "Memorabilia",
+    "tags": ["Limited Edition", "Collectible"]
+  }
+]
+

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "product-001",
+    "name": "Handshaking National Flags",
+    "description": "Small hand-held national flags on sticks for waving during matches. Features vibrant team colors and country emblems. Perfect for showing national pride and team support. Lightweight and easy to hold.",
+    "images": [
+      "/products/handshakingNationalFlags.png"
+    ],
+    "category": "National Flags",
+    "tags": ["Flag", "National", "Handheld"]
+  },
+  {
+    "id": "product-002",
+    "name": "National Flag Bunting",
+    "description": "Decorative flag bunting featuring participating nation flags. Perfect for decorating viewing areas, parties, or shops. Weather-resistant material, vibrant colors. Great for creating World Cup atmosphere.",
+    "images": [
+      "/products/NationalFlagBunting.png"
+    ],
+    "category": "National Flags",
+    "tags": ["Decoration", "Bunting", "Flags"]
+  },
+  {
+    "id": "product-003",
+    "name": "Regular Face Tattoo Stickers",
+    "description": "Colorful face tattoo stickers for fans to show team support. Easy to apply and remove, long-lasting adhesive. Features team colors, logos, or patterns. Safe and non-toxic, suitable for all ages.",
+    "images": [
+      "/products/RegularFaceTattoo.png"
+    ],
+    "category": "Face Sticker",
+    "tags": ["Face Tattoo", "Stickers", "Fan"]
+  },
+  {
+    "id": "product-004",
+    "name": "Glow-in-the-Dark Face Stickers",
+    "description": "Fun glow-in-the-dark face stickers for night matches. Easy to apply and remove. Creates eye-catching face paint effects that glow in stadium lighting. Safe for skin, non-toxic materials.",
+    "images": [
+      "/products/Glow-in-the-darkFaceStickers.png"
+    ],
+    "category": "Face Sticker",
+    "tags": ["Face Paint", "Glow", "Stickers"]
+  },
+  {
+    "id": "product-005",
+    "name": "Stadium Cheering Horn",
+    "description": "Vibrant plastic cheering horn for stadium atmosphere. Loud and energetic sound perfect for match day celebrations. Lightweight and easy to use, creates an exciting fan experience.",
+    "images": [
+      "/products/cheeringHorn1.png",
+      "/products/cheeringHorn2.png",
+      "/products/cheeringHorn3.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Stadium", "Fan", "Noisemaker"]
+  },
+  {
+    "id": "product-006",
+    "name": "Foam Hand / Foam Finger",
+    "description": "Classic foam hand accessory for cheering on your team. Comfortable to wear, lightweight foam construction. Features team colors and numbers. Essential fan gear for stadium support.",
+    "images": [
+      "/products/foamHand1.png",
+      "/products/foamHand2.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Fan", "Foam", "Hand"]
+  },
+  {
+    "id": "product-007",
+    "name": "Hand Clapper",
+    "description": "Lightweight plastic hand clapper for creating noise and excitement. Easy to use, creates loud clapping sound. Perfect for cheering on your team during matches. Comfortable grip design.",
+    "images": [
+      "/products/handClapper1.png",
+      "/products/handClapper2.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Noisemaker", "Hand", "Stadium"]
+  },
+  {
+    "id": "product-008",
+    "name": "Cheering Sticks",
+    "description": "Colorful plastic cheering sticks for fans to wave during matches. Durable construction, vibrant colors that represent team spirit. Perfect for creating visual excitement in the stands.",
+    "images": [
+      "/products/cheeringSticks.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Fan", "Colorful", "Match Day"]
+  },
+  {
+    "id": "product-009",
+    "name": "Glow-in-the-Dark Cheering Sticks",
+    "description": "Special edition cheering sticks with glow-in-the-dark feature. Perfect for night matches and evening games. Creates stunning visual effects in dark stadium environments. Batteries included.",
+    "images": [
+      "/products/Glow-in-the-darkCheeringSticks.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Glow", "Night Match", "LED"]
+  },
+  {
+    "id": "product-010",
+    "name": "National Supporter Kit",
+    "description": "Complete supporter kit custom colors by country. Includes scarf, glasses, wristband, whistle, and T-shirt customized in national colors. Perfect all-in-one package for the ultimate fan experience.",
+    "images": [
+      "/products/NationalSupporterKit1.png",
+      "/products/NationalSupporterKit2.png",
+      "/products/NationalSupporterKit3.png"
+    ],
+    "category": "Cheering Accessories",
+    "tags": ["Kit", "Complete", "Supporter", "Custom Colors"]
+  }
+]
