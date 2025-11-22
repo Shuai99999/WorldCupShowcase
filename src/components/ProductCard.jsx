@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react'
 import './ProductCard.css'
+import { getImagePath } from '../utils/imagePath'
 
 function ProductCard({ product }) {
   const [imageError, setImageError] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
   
-  const images = product.images && product.images.length > 0 ? product.images : []
+  const images = product.images && product.images.length > 0 
+    ? product.images.map(img => getImagePath(img)) 
+    : []
   const hasMultipleImages = images.length > 1
   
   // Use a data URI for placeholder to avoid infinite loading loop
