@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debug Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .info { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
+    .error { background: #fee; color: #c00; padding: 15px; margin: 10px 0; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Debug Information</h1>
+  <div class="info">
+    <h3>Current URL:</h3>
+    <p id="current-url"></p>
+  </div>
+  <div class="info">
+    <h3>Expected Base Path:</h3>
+    <p id="base-path"></p>
+  </div>
+  <div class="info">
+    <h3>Resources Check:</h3>
+    <p id="resources"></p>
+  </div>
+  
+  <script>
+    document.getElementById('current-url').textContent = window.location.href;
+    var pathParts = window.location.pathname.split('/').filter(Boolean);
+    var repoName = pathParts[0] || 'WorldCupShowcase';
+    document.getElementById('base-path').textContent = '/' + repoName + '/';
+    
+    // Check if assets can be loaded
+    var assetsPath = '/' + repoName + '/assets/';
+    document.getElementById('resources').textContent = 'Assets should be at: ' + assetsPath;
+    
+    console.log('Repo name:', repoName);
+    console.log('Expected base:', '/' + repoName + '/');
+  </script>
+</body>
+</html>
+

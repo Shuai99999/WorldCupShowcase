@@ -7,10 +7,25 @@ import react from '@vitejs/plugin-react'
 // 如果使用自定义域名，base路径也应该是 '/'
 const REPO_NAME = process.env.VITE_REPO_NAME || 'WorldCupShowcase'
 
+// 根据环境变量设置base路径
+function getBasePath() {
+  // 如果设置了VITE_BASE环境变量，优先使用
+  if (process.env.VITE_BASE) {
+    return process.env.VITE_BASE
+  }
+  
+  // 如果是github.io用户页面，使用根路径
+  if (REPO_NAME.includes('.github.io')) {
+    return '/'
+  }
+  
+  // 否则使用仓库名作为base路径
+  return `/${REPO_NAME}/`
+}
+
 export default defineConfig({
   plugins: [react()],
-  // 使用环境变量或默认仓库名
-  base: process.env.VITE_BASE || (REPO_NAME.includes('.github.io') ? '/' : `/${REPO_NAME}/`),
+  base: getBasePath(),
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
