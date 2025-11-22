@@ -1,96 +1,110 @@
-# 2026美加墨世界杯商品展示网站
+# 2026 World Cup Showcase
 
-一个简洁美观的世界杯商品展示网站，支持通过JSON配置文件轻松添加和管理商品。
+A beautiful World Cup merchandise showcase website built with React and Vite.
 
-## 功能特点
+## Features
 
-- 🎨 精美的2026美加墨世界杯主题设计
-- 📦 通过JSON配置文件轻松添加商品
-- 🖼️ 支持多图片展示
-- 📱 响应式设计，支持手机、平板、电脑
-- ⚡ 基于React + Vite，快速加载
+- 🎨 Beautiful 2026 World Cup theme design
+- 📦 Easy product management via JSON configuration
+- 🖼️ Multi-image support with carousel
+- 📱 Responsive design for mobile, tablet, and desktop
+- ⚡ Built with React + Vite for fast loading
 
-## 快速开始
+## Quick Start
 
-### 安装依赖
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 启动开发服务器
+### Development Server
 
 ```bash
 npm run dev
 ```
 
-### 构建生产版本
+### Build for Production
 
 ```bash
 npm run build
 ```
 
-## 如何添加商品
+## GitHub Pages Deployment
 
-### 1. 准备商品图片
+This project is configured for GitHub Pages deployment using GitHub Actions.
 
-将商品图片放到 `public/products/` 目录下。
+### Setup Steps:
 
-### 2. 编辑商品配置
+1. **Configure Repository Settings**
+   - Go to your GitHub repository
+   - Click `Settings` → `Pages`
+   - Under `Source`, select `GitHub Actions`
 
-打开 `src/data/products.json` 文件，按照以下格式添加商品：
+2. **Push Code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Setup GitHub Pages"
+   git push origin main
+   ```
+
+3. **Automatic Deployment**
+   - GitHub Actions will automatically build and deploy
+   - Your site will be available at: `https://your-username.github.io/WorldCupShowcase/`
+
+### Important: Base Path Configuration
+
+If your repository name is different from `WorldCupShowcase`, you need to update `vite.config.js`:
+
+```javascript
+// If your repo is named "MyProject", change line 10 to:
+base: '/MyProject/',
+
+// If using a custom domain or username.github.io, use:
+base: '/',
+```
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## Adding Products
+
+Products are configured in `src/data/products.json`. See [HOW_TO_ADD_PRODUCTS.md](./HOW_TO_ADD_PRODUCTS.md) for detailed instructions.
+
+### Quick Example:
 
 ```json
 {
   "id": "product-001",
-  "name": "商品名称",
-  "description": "商品详细描述",
-  "images": ["/products/图片名.jpg"],
-  "category": "球衣",
-  "tags": ["官方", "正品"],
-  "source": "淘宝"
+  "name": "Product Name",
+  "description": "Product description",
+  "images": ["/products/image.png"],
+  "category": "Accessories",
+  "tags": ["Tag1", "Tag2"]
 }
 ```
 
-### 3. 保存即可
-
-保存文件后，刷新浏览器即可看到新商品。
-
-## 详细配置说明
-
-请查看 `README_商品配置说明.md` 文件，了解更多配置细节。
-
-## 项目结构
+## Project Structure
 
 ```
 WorldCupShowcase/
 ├── public/
-│   └── products/          # 商品图片目录
+│   └── products/          # Product images
 ├── src/
-│   ├── components/        # React组件
-│   │   ├── Home.jsx       # 首页组件
-│   │   ├── ProductCard.jsx # 商品卡片组件
-│   │   └── ProductGrid.jsx # 商品网格组件
+│   ├── components/        # React components
 │   ├── data/
-│   │   ├── products.json  # 商品数据（主要配置文件）
-│   │   └── products.template.json # 配置模板
-│   ├── App.jsx
-│   └── main.jsx
-└── README.md
+│   │   └── products.json  # Product data
+│   └── ...
+└── .github/
+    └── workflows/
+        └── deploy.yml     # GitHub Actions deployment
 ```
 
-## 技术栈
+## Tech Stack
 
 - React 19
 - Vite 7
-- 纯CSS（无UI框架依赖）
+- Pure CSS (no UI framework)
 
-## 注意事项
-
-- 本项目仅用于商品展示，不涉及支付功能
-- 商品信息来自淘宝、1688等批发渠道
-- 图片加载失败时会自动显示占位图
-
-## 许可证
+## License
 
 MIT
