@@ -1,22 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" width="48" height="32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 360" width="48" height="32">
   <!-- Green stripe -->
-  <rect width="90" height="20" fill="#006847"/>
+  <rect width="540" height="120" fill="#006847"/>
+  
   <!-- White stripe -->
-  <rect y="20" width="90" height="20" fill="#FFFFFF"/>
+  <rect y="120" width="540" height="120" fill="#FFFFFF"/>
+  
   <!-- Red stripe -->
-  <rect y="40" width="90" height="20" fill="#CE1126"/>
-  <!-- Simplified coat of arms (eagle and snake) -->
-  <g transform="translate(45,30)">
+  <rect y="240" width="540" height="120" fill="#CE1126"/>
+  
+  <!-- Coat of arms (eagle with snake, simplified but recognizable) -->
+  <g transform="translate(270,180)">
     <!-- Eagle body -->
-    <ellipse cx="0" cy="2" rx="6" ry="4" fill="#8B4513"/>
-    <!-- Eagle head -->
-    <circle cx="0" cy="-3" r="3" fill="#8B4513"/>
-    <!-- Eagle wings -->
-    <ellipse cx="-4" cy="0" rx="3" ry="5" fill="#8B4513" transform="rotate(-20)"/>
-    <ellipse cx="4" cy="0" rx="3" ry="5" fill="#8B4513" transform="rotate(20)"/>
-    <!-- Snake (simplified) -->
-    <ellipse cx="3" cy="5" rx="2" ry="4" fill="#228B22" transform="rotate(45)"/>
+    <ellipse cx="0" cy="15" rx="25" ry="18" fill="#8B4513"/>
+    
+    <!-- Eagle head (looking left) -->
+    <circle cx="-5" cy="-10" r="12" fill="#8B4513"/>
+    <circle cx="-8" cy="-13" r="3" fill="#FFFFFF"/>
+    <circle cx="-2" cy="-13" r="3" fill="#FFFFFF"/>
+    <ellipse cx="-5" cy="-11" rx="5" ry="4" fill="#FFD700"/>
+    
+    <!-- Eagle beak -->
+    <path d="M -12 -8 L -18 -5 L -12 -3 Z" fill="#FFD700"/>
+    
+    <!-- Eagle wings (spread) -->
+    <path d="M -25 10
+             Q -35 -5 -38 -20
+             Q -32 -15 -28 -10
+             Q -25 -5 -25 10 Z" 
+          fill="#8B4513"/>
+    <path d="M 25 10
+             Q 35 -5 38 -20
+             Q 32 -15 28 -10
+             Q 25 -5 25 10 Z" 
+          fill="#8B4513"/>
+    
+    <!-- Eagle legs and talons -->
+    <rect x="-10" y="30" width="6" height="15" fill="#FFD700" rx="3"/>
+    <rect x="4" y="30" width="6" height="15" fill="#FFD700" rx="3"/>
+    
+    <!-- Snake (wrapped around cactus/perch) -->
+    <ellipse cx="12" cy="35" rx="10" ry="20" fill="#228B22" transform="rotate(45 12 35)"/>
+    <circle cx="15" cy="38" r="5" fill="#228B22"/>
+    <circle cx="17" cy="40" r="2" fill="#FFFFFF"/>
+    
     <!-- Cactus (simplified) -->
-    <rect x="-2" y="4" width="4" height="8" fill="#006847" rx="1"/>
+    <rect x="-8" y="28" width="16" height="25" fill="#006847" rx="4"/>
+    <rect x="-5" y="35" width="10" height="18" fill="#006847" rx="3"/>
+    
+    <!-- Perch/branch -->
+    <ellipse cx="0" cy="50" rx="35" ry="6" fill="#654321"/>
   </g>
 </svg>
