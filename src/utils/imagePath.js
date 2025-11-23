@@ -19,4 +19,3 @@ export function getImagePath(path) {
   }
   return path || ''
 }
-

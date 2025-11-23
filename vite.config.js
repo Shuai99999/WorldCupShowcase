@@ -1,18 +1,19 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 // GitHub Pages 配置
-// 如果你的仓库名是 WorldCupShowcase，base路径应该是 /WorldCupShowcase/
-// 如果仓库名是 username.github.io（用户页面），base路径应该是 '/'
-// 如果使用自定义域名，base路径也应该是 '/'
-const REPO_NAME = process.env.VITE_REPO_NAME || 'WorldCupShowcase'
+// 根据你的URL: https://shuai99999.github.io/WorldCupShowcase/
+// base路径应该是 /WorldCupShowcase/
+// 如果仓库名不同，请修改下面的base路径
 
 export default defineConfig({
+  // GitHub Pages base路径 - 根据你的实际仓库名修改
+  base: "/WorldCupShowcase/",
   plugins: [react()],
-  // 使用环境变量或默认仓库名
-  base: process.env.VITE_BASE || (REPO_NAME.includes('.github.io') ? '/' : `/${REPO_NAME}/`),
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
-})
+});

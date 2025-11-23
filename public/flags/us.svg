@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 100" width="48" height="25">
+  <!-- Red stripes background -->
+  <rect width="190" height="100" fill="#B22234"/>
+  <!-- White stripes -->
+  <rect y="7.69" width="190" height="7.69" fill="#FFFFFF"/>
+  <rect y="23.08" width="190" height="7.69" fill="#FFFFFF"/>
+  <rect y="38.46" width="190" height="7.69" fill="#FFFFFF"/>
+  <rect y="53.85" width="190" height="7.69" fill="#FFFFFF"/>
+  <rect y="69.23" width="190" height="7.69" fill="#FFFFFF"/>
+  <rect y="84.62" width="190" height="7.69" fill="#FFFFFF"/>
+  <!-- Blue canton -->
+  <rect width="76" height="53.85" fill="#3C3B6E"/>
+  <!-- Stars (5-pointed, simplified) -->
+  <g fill="#FFFFFF">
+    <circle cx="10" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="20" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="30" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="40" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="50" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="60" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="15" cy="20" r="2" fill="#FFFFFF"/>
+    <circle cx="25" cy="20" r="2" fill="#FFFFFF"/>
+    <circle cx="35" cy="20" r="2" fill="#FFFFFF"/>
+    <circle cx="45" cy="20" r="2" fill="#FFFFFF"/>
+    <circle cx="55" cy="20" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>

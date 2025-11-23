@@ -8,14 +8,7 @@ function ProductCard({ product }) {
   const [isHovered, setIsHovered] = useState(false)
   
   const images = product.images && product.images.length > 0 
-    ? product.images.map(img => {
-        const processedPath = getImagePath(img)
-        // Debug logging for cheering horn images
-        if (img.includes('cheeringHorn')) {
-          console.log('Cheering horn image:', img, '->', processedPath)
-        }
-        return processedPath
-      })
+    ? product.images.map(img => getImagePath(img)) 
     : []
   const hasMultipleImages = images.length > 1
   
@@ -36,24 +29,16 @@ function ProductCard({ product }) {
   }, [isHovered, hasMultipleImages, images.length])
 
   const handleImageError = (e) => {
-    console.error('Image load error:', currentImage, 'Index:', currentImageIndex)
-    // Don't set imageError to true immediately, try next image if available
-    if (hasMultipleImages && currentImageIndex < images.length - 1) {
-      // Try next image
-      setCurrentImageIndex(currentImageIndex + 1)
-    } else {
-      // All images failed, use placeholder
-      if (!imageError && currentImage) {
-        setImageError(true)
-        e.target.src = placeholderImage
-      }
+    if (!imageError && currentImage) {
+      setImageError(true)
+      e.target.src = placeholderImage
     }
   }
   
   // Reset image error when image changes
   useEffect(() => {
     setImageError(false)
-  }, [currentImageIndex, currentImage])
+  }, [currentImageIndex])
 
   const handleImageClick = () => {
     if (hasMultipleImages) {
@@ -80,7 +65,6 @@ function ProductCard({ product }) {
           onClick={handleImageClick}
           loading="lazy"
           style={{ cursor: hasMultipleImages ? 'pointer' : 'default' }}
-          key={currentImageIndex}
         />
         {hasMultipleImages && (
           <>
